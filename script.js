@@ -4,9 +4,7 @@ function displayResults(responseJson) {
     var getId = responseJson.results[i].id;
     $('.resultsList').append(
       `
-      <ul>
-      <li><button class = "getRec">${responseJson.results[i].title}</button></li>
-      </ul>
+      <li class="getRecLi"><button class = "getRec">${responseJson.results[i].title}</button></li>
       `
     )
   }
@@ -30,7 +28,7 @@ function displayResults(responseJson) {
           $('.resultsList').append(
         
         `
-          <li>${getSteps}</li>
+          <li class = "stepsjs">${itwo + 1}. ${getSteps}</li>
        `
         )
         }
@@ -42,16 +40,16 @@ function displayResults(responseJson) {
           var plusOne = ithree + 1;
           $('.resultsList').append(
         `
-          <p>Ingredient ${plusOne}</p>
-          <li>${getIng} ${getMes} ${getMesTwo}</li>
+          <p class="plusOne">Ingredient ${plusOne}</p>
+          <li class = "ing">${getIng} ${getMes} ${getMesTwo}</li>
        `
         )
         }
       });
     });
 }
-function getRecipe(foodName) {
-      fetch(`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?number=10&offset=0&type=main+course&query=${foodName}`,  {
+function getRecipe(foodName, numCount) {
+      fetch(`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?number=${numCount}&offset=0&type=main+course&query=${foodName}`,  {
           method: "GET",
           mode: "cors",
           cache: "no-cache",
@@ -78,7 +76,8 @@ function watchForm() {
     event.preventDefault();
 
     const foodName = $(this).find('.searchBar').val();
-    getRecipe(foodName);
+    const numCount = $(this).find('.numberCount').val();
+    getRecipe(foodName, numCount);
   });
 }
 

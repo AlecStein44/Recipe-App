@@ -3,27 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Food App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <header>
-      <a href="index.html">Recipe Food App!!!</a>
+      <section class="searchSec">
+      <a href="index.html" class="appName">Recipe App!!!</a>
+      <p class="desc">Welcome to my Food App! Please enter what you want to search in the search bar and click submit! Remember if you enter something that has spelling mistakes your results may not show up.
+      </p>
+        <form>
+          <input type="text" name="searchBarName" class="searchBar" placeholder = "Search">
+          <input type="number" name="numberCountName" class="numberCount" min = "1" value = "10">
+          <input type="submit" name="submitButtonName" class="submitButton">
+      </section> 
     </header>
 
     <main>
-      <section class="searchSec">
-        <form>
-          <input type="text" name="searchBarName" class="searchBar">
-          <input type="submit" name="submitButtonName" class="submitButton">
-      </section>
-
-      <section class="recipeList">
         <div class="resultsList">
-
+          <ul class = "getIngUl">
+          </ul>
         </div>
-      </section>
+    </main>
   </body>
 </html>
