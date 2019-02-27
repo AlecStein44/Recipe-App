@@ -1,16 +1,17 @@
 function displayResults(responseJson) {
   $('.resultsList').empty();
   for (var i = 0; i < responseJson.results.length; i++) {
-    var getId = responseJson.results[i].id;
+    var idStore = responseJson.results[i].id;
     $('.resultsList').append(
       `
-      <li class="getRecLi"><button class = "getRec">${responseJson.results[i].title}</button></li>
+      <li class="getRecLi"><button value = "${idStore}" class = "getRec">${responseJson.results[i].title}</button></li>
       `
     )
   }
   $('.getRec').click(function(){
-       $('.resultsList').empty();
-       $.ajaxSetup({
+      var getId = $('.getRec').val();
+      $('.resultsList').empty();
+      $.ajaxSetup({
         headers : {
           "X-RapidAPI-Key" : "ab80ba08ebmsh519a2d68044569bp124b67jsn34df545f6c88"
         }

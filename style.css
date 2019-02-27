@@ -75,8 +75,6 @@ main {
 .resultsList {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .getRec {
@@ -108,9 +106,12 @@ main {
 }
 
 h3 {
+  display: flex;
   border-bottom: 1px solid rgb(110, 114, 117);
   font-size: 25px;
   color: rgb(110, 114, 117);
+  justify-content: center;
+  align-items: center;
 }
 
 li {
@@ -124,4 +125,13 @@ li {
 img {
   width: 560px;
   height: 370px;
+  margin: 10px auto 10px auto;
+}
+
+.ing {
+  margin: 10px 0px 25px 24%;
+}
+
+.plusOne {
+  margin: 10px 0px 10px 24%;
 }
