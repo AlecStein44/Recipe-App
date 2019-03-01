@@ -8,8 +8,15 @@ function displayResults(responseJson) {
       `
     )
   }
+  if (i == 0) {
+     $('.resultsList').append(
+      `
+      <p class = "Error">Sorry, We Can't Find The Recipe You Are Looking For</p>
+      `
+    )
+  }
   $('.getRec').click(function(){
-      var getId = $('.getRec').val();
+      var getId = $(this).val();
       $('.resultsList').empty();
       $.ajaxSetup({
         headers : {
@@ -64,7 +71,6 @@ function getRecipe(foodName, numCount) {
       })
       .then(response => response.json())
       .then(responseJson => displayResults(responseJson))
-      .then(responseJson => loopId(responseJson))
 }
 
 $('.submitButton').click(function(){

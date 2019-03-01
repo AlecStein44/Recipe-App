@@ -1,3 +1,4 @@
+@media only screen and (min-width: 1020px) { 
 header {
   margin-left: auto;
   margin-right: auto;
@@ -77,6 +78,12 @@ main {
   flex-direction: column;
 }
 
+.Error {
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+  margin: 0px auto 0px auto;
+}
+
 .getRec {
   border: 1px solid rgb(132, 137, 141);
   color: white;
@@ -129,9 +136,459 @@ img {
 }
 
 .ing {
-  margin: 10px 0px 25px 24%;
+  margin: 10px 0px 25px 26%;
 }
 
 .plusOne {
   margin: 10px 0px 10px 24%;
+}
+}
+
+
+/* Medium Screens */
+@media only screen and (min-width: 481px) and (max-width: 1020px) { 
+  header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid rgb(110, 114, 117);
+}
+
+.searchSec {
+  padding: 15px auto 15px auto;
+}
+
+.searchSec a {
+  text-decoration: none;
+  color: rgb(110, 114, 117);
+  margin-left: 39%;
+}
+
+.appName {
+  font-size: 2em;
+}
+
+.desc {
+  font-size: 25px;
+  margin-left: 10px;
+  color: rgb(110, 114, 117);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 20%
+}
+
+.searchBar {
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 120px;
+  border: 1px solid rgb(132, 137, 141);
+  color: rgb(132, 137, 141);
+  background-color: white;
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.numberCount {
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 45px;
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.submitButton {
+  margin-left: 25px;
+  margin-right: 25px;
+  border: 1px solid rgb(132, 137, 141);
+  color: white;
+  background-color: rgb(147, 154, 159);
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.submitButton:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.Error {
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+  margin: 0px auto 0px auto;
+}
+
+.getRec {
+  border: 1px solid rgb(132, 137, 141);
+  color: white;
+  background-color: rgb(147, 154, 159);
+  border-radius: 1px;
+  font-size: 20px;
+  width: 315px;
+  table-layout: fixed;
+  margin: 10px 0px 10px 0%;
+}
+
+.getRecLi {
+  margin: 0px 0px 0px 25%;
+}
+
+.getRec:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.stepsjs {
+  width: 100%;
+}
+
+h3 {
+  display: flex;
+  border-bottom: 1px solid rgb(110, 114, 117);
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.stepsjs {
+  margin: 10px auto 10px auto;
+}
+
+img {
+  width: 560px;
+  height: 370px;
+  margin: 10px auto 10px auto;
+}
+
+.ing {
+  margin: 10px 0px 25px 15%;
+}
+
+.plusOne {
+  margin: 10px 0px 10px 0px;
+}
+}
+
+
+/* Small Screens*/
+@media only screen and (min-width: 420px) and (max-width: 480px) {
+  header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid rgb(110, 114, 117);
+}
+
+.searchSec {
+  padding: 15px auto 15px auto;
+}
+
+.searchSec a {
+  text-decoration: none;
+  color: rgb(110, 114, 117);
+  margin-left: 30%;
+}
+
+.appName {
+  font-size: 2em;
+}
+
+.desc {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+
+.searchBar {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 120px;
+  border: 1px solid rgb(132, 137, 141);
+  color: rgb(132, 137, 141);
+  background-color: white;
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.numberCount {
+  margin-left: 10px;
+  width: 45px;
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.submitButton {
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid rgb(132, 137, 141);
+  color: white;
+  background-color: rgb(147, 154, 159);
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.submitButton:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.Error {
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+  margin: 0px auto 0px auto;
+}
+
+.getRec {
+  border: 1px solid rgb(132, 137, 141);
+  color: white;
+  background-color: rgb(147, 154, 159);
+  border-radius: 1px;
+  font-size: 20px;
+  width: 315px;
+  table-layout: fixed;
+  margin: 10px 0px 10px 0%;
+}
+
+.getRecLi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getRec:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.stepsjs {
+  width: 100%;
+}
+
+h3 {
+  display: flex;
+  border-bottom: 1px solid rgb(110, 114, 117);
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.stepsjs {
+  margin: 10px auto 10px auto;
+}
+
+img {
+  width: 100%;
+  height: 370px;
+  margin: 10px auto 10px auto;
+}
+
+.ing {
+  margin: 10px 0px 25px 24%;
+}
+
+.plusOne {
+  margin: 10px 0px 10px 5%;
+}
+}
+
+
+/*Smallest Screens*/
+@media only screen and (max-width: 420px) {
+  header {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid rgb(110, 114, 117);
+}
+
+.searchSec {
+  padding: 15px auto 15px auto;
+}
+
+.searchSec a {
+  text-decoration: none;
+  color: rgb(110, 114, 117);
+  margin-left: 20%;
+}
+
+.appName {
+  font-size: 2em;
+}
+
+.desc {
+  margin-left: 5%;
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 5%;
+}
+
+.searchBar {
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 120px;
+  border: 1px solid rgb(132, 137, 141);
+  color: rgb(132, 137, 141);
+  background-color: white;
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.numberCount {
+  margin-left: 10px;
+  width: 45px;
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.submitButton {
+  margin-left: 15px;
+  border: 1px solid rgb(132, 137, 141);
+  color: white;
+  background-color: rgb(147, 154, 159);
+  border-radius: 1px;
+  font-size: 20px;
+}
+
+.submitButton:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.Error {
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+  margin: 0px auto 0px auto;
+}
+
+.getRec {
+  border: 1px solid rgb(132, 137, 141);
+  color: white;
+  background-color: rgb(147, 154, 159);
+  border-radius: 1px;
+  font-size: 20px;
+  width: 315px;
+  table-layout: fixed;
+  margin: 10px 0px 10px 0%;
+}
+
+.getRecLi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getRec:hover {
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.stepsjs {
+  width: 100%;
+}
+
+h3 {
+  display: flex;
+  border-bottom: 1px solid rgb(110, 114, 117);
+  font-size: 25px;
+  color: rgb(110, 114, 117);
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.stepsjs {
+  margin: 10px auto 10px auto;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  margin: 10px auto 10px auto;
+}
+
+.ing {
+  margin: 10px 0px 25px 24%;
+}
+
+.plusOne {
+  margin: 10px 0px 10px 5%;
+}
 }
