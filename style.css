@@ -51,11 +51,6 @@
 
 /* end of index.html */
 
-.resultsimg {
-  margin-top: 10px;
-  width: 300px;
-  height: 150px;
-}
 
 .plusOne {
   border-top: 1px solid #FF2D31;
@@ -194,6 +189,12 @@ main {
 .resultsList {
   display: flex;
   flex-direction: column;
+}
+
+.resultsimg {
+  margin-top: 10px;
+  width: 400px;
+  height: 200px;
 }
 
 .Error {
@@ -371,6 +372,12 @@ main {
   flex-direction: column;
 }
 
+.resultsimg {
+  margin-top: 10px;
+  width: 300px;
+  height: 150px;
+}
+
 .Error {
   font-size: 25px;
   color: rgb(110, 114, 117);
@@ -544,6 +551,12 @@ main {
 .resultsList {
   display: flex;
   flex-direction: column;
+}
+
+.resultsimg {
+  margin-top: 10px;
+  width: 250px;
+  height: 150px;
 }
 
 .Error {
@@ -723,6 +736,12 @@ main {
   font-size: 25px;
   color: rgb(110, 114, 117);
   margin: 0px auto 0px auto;
+}
+
+.resultsimg {
+  margin-top: 10px;
+  width: 250px;
+  height: 150px;
 }
 
 .getRec {
