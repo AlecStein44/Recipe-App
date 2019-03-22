@@ -1,4 +1,9 @@
 /* for index.html */
+
+.startmain {
+  margin: auto;
+}
+
 .searchSecstart {
   display: flex;
   flex-direction: column;
@@ -34,7 +39,7 @@
 .startbutton {
   margin-top: 25px;
   text-decoration: none;
-  padding: 15px;
+  padding: 15px 30px;
   border: 1px solid rgb(132, 137, 141);
   color: white;
   background-color: rgb(147, 154, 159);
@@ -85,6 +90,7 @@
   color: white;
   background-color: rgb(147, 154, 159);
   border-radius: 1px;
+  max-width: 50%;
 }
 
 .ingSub:hover {
@@ -100,6 +106,7 @@ header {
   margin-right: auto;
   width: 1000px;
   margin-bottom: 50px;
+  padding-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid rgb(110, 114, 117);
 }
@@ -278,6 +285,7 @@ li {
   margin-right: auto;
   width: 100%;
   margin-bottom: 50px;
+  padding-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid rgb(110, 114, 117);
 }
@@ -459,6 +467,7 @@ li {
   margin-right: auto;
   width: 100%;
   margin-bottom: 50px;
+  padding-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid rgb(110, 114, 117);
 }
@@ -640,6 +649,7 @@ li {
   margin-right: auto;
   width: 100%;
   margin-bottom: 50px;
+  padding-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid rgb(110, 114, 117);
 }
